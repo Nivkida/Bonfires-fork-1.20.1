@@ -1,0 +1,47 @@
+package wehavecookies56.bonfires.setup;
+
+import net.minecraft.core.registries.Registries;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
+import wehavecookies56.bonfires.Bonfires;
+import wehavecookies56.bonfires.LocalStrings;
+
+import java.util.Random;
+
+/**
+ * Created by Toby on 05/11/2016.
+ */
+
+public class CreativeTabSetup {
+
+    public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Bonfires.modid);
+
+    public static final RegistryObject<CreativeModeTab> tab = TABS.register(Bonfires.modid, () ->
+            CreativeModeTab.builder()
+                    .title(Component.translatable(LocalStrings.ITEMGROUP_BONFIRES))
+                    .icon(() -> new ItemStack(ItemSetup.coiled_sword.get()))
+                    .displayItems((pParams, pOutput) -> {
+                        ItemSetup.ITEMS.getEntries().stream().map(RegistryObject::get).map(ItemStack::new).toList().forEach(pOutput::accept);
+                        ItemStack stack = new ItemStack(BlockSetup.ash_bone_pile.get());
+                        stack.setTag(new CompoundTag());
+                        if (stack.getTag() != null) {
+                            stack.getTag().putBoolean("bonfire_private", false);
+                        }
+                        stack.setHoverName(Component.translatable(LocalStrings.TOOLTIP_UNLIT));
+                        pOutput.accept(stack);
+                        stack = stack.copy();
+                        stack.getTag().putBoolean("bonfire_private", true);
+                        int[] random = new Random().ints(2,0, 9999).toArray();
+                        stack.getTag().putString("bonfire_name", "Bonfire" + random[0]);
+                        pOutput.accept(stack);
+                        stack = stack.copy();
+                        stack.getTag().putBoolean("bonfire_private", false);
+                        stack.getTag().putString("bonfire_name", "Bonfire" + random[1]);
+                        pOutput.accept(stack);
+                    }).build()
+    );
+}

@@ -1,0 +1,90 @@
+{
+  "homepage": "http://minecraft.curseforge.com/projects/bonfires/files",
+  "promos": {
+    "1.20.1-latest": "1.2.13",
+    "1.20-latest": "1.2.12",
+    "1.19.4-latest": "1.2.11",
+    "1.19.3-latest": "1.2.10",
+    "1.19.2-latest": "1.2.11",
+    "1.18.2-latest": "1.2.11",
+    "1.16.5-latest": "1.2.11",
+    "1.12.2-latest": "1.2.2",
+    "1.12-latest": "1.2.2",
+    "1.11-latest": "1.0.1",
+    "1.10.2-latest": "1.0.0"
+  },
+
+  "1.20.1": {
+    "1.20.1": "Fixed error constantly spamming log"
+  },
+
+  "1.20": {
+    "1.2.12": "Updated to 1.20, fixed Undead Bone Shard drop and reinforce menu scroll wheel"
+  },
+
+  "1.19.4": {
+    "1.2.12": "Fixed Undead Bone Shard drop and reinforce menu scroll wheel",
+    "1.2.11": "Various fixes and tweaks, Screenshots are now created for Bonfires to display in the GUI",
+    "1.2.10": "Updated to 1.19.4"
+  },
+
+  "1.19.3": {
+    "1.2.10": "Updated to 1.19.3"
+  },
+
+  "1.19.2": {
+    "1.2.12": "Fixed Undead Bone Shard drop and reinforce menu scroll wheel",
+    "1.2.11": "Various fixes and tweaks, Screenshots are now created for Bonfires to display in the GUI",
+    "1.2.10": "Fixes crash when using a Homeward Bone or Coiled Sword Fragment with destroyed Bonfires",
+    "1.2.9": "Fixed a potential crash with reinforced items, 3 new config options",
+    "1.2.8": "Fixed Estus Flask healing not increasing from reinforcement, added reinforcement info to tooltips, fixed Reinforce GUI max level display",
+    "1.2.7": "Reinforcing using item NBT tag instead of capability, item name only changed in tooltip",
+    "1.2.6": "Fixed reinforcing not working",
+    "1.2.5": "Updated to 1.19, fixed player unable to respawn"
+  },
+
+  "1.18.2": {
+    "1.2.12": "Fixed Undead Bone Shard drop and reinforce menu scroll wheel",
+    "1.2.11": "Various fixes and tweaks, Screenshots are now created for Bonfires to display in the GUI",
+    "1.2.10": "Fixes crash when using a Homeward Bone or Coiled Sword Fragment with destroyed Bonfires",
+    "1.2.9": "Fixed a potential crash with reinforced items, 3 new config options",
+    "1.2.8": "Fixed Estus Flask healing not increasing from reinforcement, added reinforcement info to tooltips, fixed Reinforce GUI max level display",
+    "1.2.7": "Reinforcing using item NBT tag instead of capability, item name only changed in tooltip",
+    "1.2.6": "Fixed reinforcing not working",
+    "1.2.5": "Fixed player unable to respawn",
+    "1.2.4": "Updated to 1.18, fixed required materials for reinforcing"
+  },
+
+  "1.16.5": {
+    "1.2.12": "Fixed Undead Bone Shard drop and reinforce menu scroll wheel",
+    "1.2.11": "Various fixes and tweaks, Screenshots are now created for Bonfires to display in the GUI",
+    "1.2.10": "Fixes crash when using a Homeward Bone or Coiled Sword Fragment with destroyed Bonfires",
+    "1.2.9": "Fixed a potential crash with reinforced items, 3 new config options",
+    "1.2.8": "Added reinforcement info to tooltips, fixed Reinforce GUI max level display",
+    "1.2.7": "Reinforcing using item NBT tag instead of capability, item name only changed in tooltip",
+    "1.2.6": "Fixed reinforcing not working",
+    "1.2.4": "Fixed required materials for reinforcing",
+    "1.2.3": "Updated to 1.16, adjusted some recipes, extra sound effects added, titles added when travelling, various small tweaks"
+  },
+
+  "1.12.2": {
+    "1.2.2": "Reinforcing now actually increases damage",
+    "1.2.1": "Added new config options, fixed dimension tab indexing, dimension tab icons now support metadata",
+    "1.2": "Fixed a bunch of bugs, added weapon and Estus Flask reinforcing with the use of Titanite materials and Undead bone shards"
+  },
+
+  "1.12": {
+    "1.1.2": "Fixed server crashing, mod now works properly on the server, next bonfire pages do not show until there is a bonfire inside it, potentially prevented some crashes",
+    "1.1.1": "Fixed dimension tab icons option",
+    "1.1.0": "Added the option to create private bonfires, the tabs for dimensions can have different icons changed in the config, bonfire creator can be seen in bonfire menu",
+    "1.0.2": "Updated to 1.12, fixed homeward bone, added advancements and added new textures by Prohecy_Wrecker"
+  },
+
+  "1.11": {
+    "1.0.1": "Updated to 1.11"
+  },
+
+  "1.10.2": {
+    "1.0.0": "Initial Release"
+  }
+}
